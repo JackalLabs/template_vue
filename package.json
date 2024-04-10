@@ -38,6 +38,7 @@
   },
   "homepage": "https://github.com/JackalLabs/template_vue/#readme",
   "dependencies": {
+    "@jackallabs/banshee": "file:jackallabs-banshee-0.0.0.tgz",
     "pinia": "^2.1.7",
     "vue": "^3.3.4",
     "vue-router": "^4.1.6",
@@ -45,6 +46,7 @@
   },
   "devDependencies": {
     "@btmills/prettier": "2.8.8",
+    "@keplr-wallet/types": "^0.12.76",
     "@rushstack/eslint-patch": "^1.1.4",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/eslint-config-typescript": "^11.0.0",
