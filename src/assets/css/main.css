@@ -1,0 +1,151 @@
+@import './base.css';
+
+#app {
+  font-weight: normal;
+  margin: 0;
+  max-width: 100vw;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.mono {
+  font-family: 'KHTekaMono', monospace;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1rem;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+  padding-top: 1rem;
+}
+
+.flex-start{
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* [INPUT] */
+/* remove the up/down arrow */
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=number]{
+  font-size: 1.5rem;
+  border-radius: 0;
+  border:1px solid;
+  padding: 0.30rem 0.5rem;
+  box-sizing: border-box;
+  background-color: var(--clr-cream);
+  color: var(--clr-off-black);
+}
+
+
+h2 {
+  font-family: 'KHTekaMono', monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* [BTN] */
+.btn {
+  cursor: pointer;
+  width: fit-content;
+  padding: 10px;
+  background: var(--clr-yellow);
+  font-size: 1rem;
+  border:none;
+  font-family: 'KHTekaMono', monospace;
+  color: var(--clr-off-black);
+  text-transform: uppercase;
+}
+
+
+
+.btn:hover {
+  cursor: pointer;
+  transition: ease-in-out 100ms;
+  background: #c1ca42;
+  transform: scale(1.1);
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.center-this{
+  width: fit-content;
+  margin:0 auto;
+}
+
+.red-txt{
+  color: var(--clr-red);
+}
+
+.userPic {
+  object-fit: cover;
+  background-color: var(--clr-off-black);
+}
+
+#runningOnJackal {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  width: 120px;
+}
+
+.home {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4.375rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* @media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+} */
+
+hr {
+  color: var(--clr-off-cream-dark);
+  border-color: var(--clr-off-cream-dark);
+  border-width: 1px;
+}
+
+.muted {
+  opacity: 0.5;
+}
+
+.hover-scale:hover{
+  cursor: pointer;
+  transition: ease-in-out 100ms;
+  transform: scale(1.2);
+  /* disable text highliting */
+  user-select: none;
+}
+.hover-scale:active{
+  transform: scale(1.1);
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    /* place-items: center; */
+  }
+}
+
+

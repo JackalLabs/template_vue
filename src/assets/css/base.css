@@ -1,0 +1,92 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --clr-off-black: #1B1C16;
+  --clr-cream: #DDDCCE;
+  --clr-yellow: #E9F451;
+  --clr-red: #F45151;
+
+  --clr-off-cream-light: #D5D4C2;
+  --clr-off-cream-dark: #C6C5AD;
+
+
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--clr-off-black);
+
+  --color-border: #1B1C16;
+  --color-border-hover: #1B1C16;
+
+  --color-heading: #1B1C16;
+  --color-text: #DDDCCE;
+
+}
+
+@font-face {
+  font-family: KHTeka;
+  src: url(@/assets/fonts/KHTeka-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: KHTeka;
+  font-weight: bold;
+  src: url(@/assets/fonts/KHTeka-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: KHTekaMono;
+  src: url(@/assets/fonts/KHTekaMono-Regular.otf) format("opentype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  font-size: 1rem;
+  --toastify-font-family: 'KHTeka', sans-serif !important;
+  --toastify-toast-background: var(--clr-off-cream-dark);
+  --toastify-text-color-light: var(--clr-off-black);
+  --toastify-text-color-dark: var(--clr-off-black);
+  --toastify-color-light: var(--clr-off-cream-dark);
+  --toastify-color-dark: var(--clr-off-cream-dark);
+  --toastify-color-success: var(--clr-yellow);
+  --toastify-color-error: var(--clr-red);
+  --toastify-color-progress-success: var(--clr-yellow);
+  --toastify-icon-color-success: var(--clr-yellow);
+  --toastify-color-progress-light: var(--clr-yellow);
+
+}
+
+p {
+  line-height: 19px;
+}
+
+.Toastify__toast {
+ border-radius: 0 !important;
+}
+
+input {
+  border-radius: 0;
+}
+
+body {
+  min-height: 100dvh;
+  color: var(--color-text);
+  background: rgb(36,35,33);
+  background: linear-gradient(0deg, rgba(36,35,33,1) 0%, rgba(27,28,22,1) 100%);
+  overflow: hidden;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  font-family: 'KHTeka', sans-serif;
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+

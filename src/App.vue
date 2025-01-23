@@ -3,10 +3,7 @@
 </template>
 
 <script setup lang="ts">
-
+  import '@/assets/css/main.css'
 </script>
 
-<style lang="scss">
-@import '@/assets/css/style.css';
-
-</style>
+<style lang="scss"></style>
