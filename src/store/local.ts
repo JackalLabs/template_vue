@@ -15,21 +15,18 @@ export const useLocalStore = defineStore('local', () => {
     return localStorage.getItem(tag)
   }
 
-  function writeLocalStorage(tag:any, value:any) {
+  function writeLocalStorage(tag: any, value: any) {
     localStorage.setItem(tag, value)
   }
 
   //Modal popup
   const modalOpen = ref(0)
-  const selectedName = ref('')
-  const registeredRecently = ref('xXxSupahSleuthxXx')
   const loggedIn = ref(false)
   const callback = ref('/')
   const windowWidth = ref(0)
 
   function closeModal() {
     modalOpen.value = 0
-    selectedName.value = ''
   }
 
   return {
@@ -39,8 +36,6 @@ export const useLocalStore = defineStore('local', () => {
 
     modalOpen,
     closeModal,
-    selectedName,
-    registeredRecently,
     loggedIn,
     callback,
     windowWidth
